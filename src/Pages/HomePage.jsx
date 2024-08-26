@@ -14,6 +14,9 @@ import GlassMaterial from "../assets/GlassMaterial.png";
 import Frame3 from "../assets/Frame3.png";
 import Caution from "../assets/icon-park_caution.png"; 
 import TryComponent4 from "../assets/TryComponent4.png";
+import interview from "../assets/interview.png";
+import ContentBox from "../assets/ContentBox.png";  
+import humanTechnology from "../assets/humanTechnology.png";
 
 import ComponentForm1 from "../Components/ComponentForm1.jsx";
 import ComponentForm2 from "../Components/ComponentForm2.jsx";
@@ -100,8 +103,9 @@ function HomePage() {
             </div>
         </div>
 
-      {/* End of 1st part */}
       </div>
+    {/* End of 1st part */}
+
 
     {/* Start of 2nd part */}
       <div>
@@ -148,8 +152,53 @@ function HomePage() {
             
             <ComponentForm3 />
         </div>
+      </div>
+      {/* End of 2nd part */}
+
+
+      {/* Start of 3rd part */}
+      <div className="technicalInterview">
+        <h2 className="technicalInterviewh2">:: Technical interviews ::</h2>
+        <h3 className="technicalInterviewh3">Interview like it’s <p className="para2024">2024</p></h3>
+        <p className="technicalInterviewpara">
+          Ditch out of reach and out of touch interview questions about golf balls and 747s —
+          and turn off your clunky screen share for good. Code, create, and collaborate with
+          an IDE built to showcase real-world skills in a real-world environment.
+        </p>
+
+        <img className="interviewImg" src={interview} alt="Interview Image" />
+
+        <div className="otherUsers">
+          <h1 className="otherHeader">What other users say</h1>
+
+          {/* Make slider of images */}
+          <img className="ContentBoxImg" src={ContentBox} alt="Content Box" />
+        </div>
 
       </div>
+      {/* End of 3rd part */}
+
+
+      {/* Start of 4th part */}
+      <div className="fourthDiv">
+
+        <div className="fourthDivpart">
+          <h2 className="fourthDivpartHeader">Practice coding challenges &
+              prep for interviews
+          </h2>
+          <p className="fourthDivpartPara">Start practicing your skills now and land the job
+          of your dreams.</p>
+          <button className="btn">Join the community</button>
+        </div>
+
+        <div>
+          <img className="humanTechnology2" src={humanTechnology} alt="technologyImage" />
+        </div>
+
+      </div>
+      {/* End of 4th part */}
+
+
 
     </div>
   );
